@@ -3,4 +3,5 @@ export interface IContacto {
   nombre: string;
   apellidos: string;
   email: string;
+  sexo: string;
 }
