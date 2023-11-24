@@ -21,8 +21,9 @@ export class LoginPageComponent implements OnInit {
     }
   }
 
-  loginUser() {
-    this.authService.login(this.email, this.password).subscribe(
+  loginUser(value: any) {
+    let { email, password } = value;
+    this.authService.login(email, password).subscribe(
       (response) => {
         if (response.token) {
           sessionStorage.setItem('token', 'response.token');
