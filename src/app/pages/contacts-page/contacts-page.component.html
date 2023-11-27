@@ -1,7 +1,7 @@
 <h1>Tus contactos :</h1>
 
 <ng-container
-  *ngIf="filtroSexo == 'mujer' || filtroSexo == 'hombre'; else listaCompleta"
+  *ngIf="filtroSexo == 'female' || filtroSexo == 'male'; else listaCompleta"
 >
   <p>Mostrando amigos de genero: "{{ filtroSexo }}"</p>
 </ng-container>
@@ -12,12 +12,12 @@
 
 <!-- Listar los contactos y poder navegar al detalle de cada contacto -->
 
-<div *ngFor="let contacto of listaContactos; let i = index">
+<div *ngFor="let contacto of listaRandomContacts; let i = index">
   <div
-    routerLink="{{ contacto.id }}"
+    routerLink="{{ contacto.id.name }}"
     [state]="{ data: contacto, filtro: filtroSexo }"
   >
-    <h5 class="contacto">{{ contacto.nombre }}</h5>
+    <h5 class="contacto">{{ contacto.name.first }} {{ contacto.name.last }}</h5>
     <button (click)="volverAHome(contacto)">
       Seleccionar como Amigo Invisible
     </button>

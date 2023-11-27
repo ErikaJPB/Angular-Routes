@@ -1,4 +1,4 @@
-<ng-container *ngIf="contacto?.email; else errorContacto">
+<ng-container *ngIf="contacto; else errorContacto">
   <h1>Contacto : {{ id }}</h1>
   <h2>Nombre: {{ contacto | nombreCompleto }}</h2>
   <h2>Email: {{ contacto?.email }}</h2>

@@ -35,7 +35,7 @@ export class RandomContactPageComponent implements OnInit {
 
   obtenerListaContactos(n: number) {
     this.randomUserService.obtenerRandomContacts(n).subscribe({
-      next: (response: Results[]) => {
+      next: (response: Results) => {
         console.log(response); // Se lo pasamos al randomContact
       },
       error: (error) => console.error(error),
