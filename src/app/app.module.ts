@@ -14,6 +14,8 @@ import { ContactsPageComponent } from './pages/contacts-page/contacts-page.compo
 import { ContactDetailPageComponent } from './pages/contact-detail-page/contact-detail-page.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
 import { NombreCompletoPipe } from './pipes/nombre-completo.pipe';
+import { RandomUserComponent } from './components/random-user/random-user.component';
+import { RandomContactPageComponent } from './pages/random-contact-page/random-contact-page.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { NombreCompletoPipe } from './pipes/nombre-completo.pipe';
     ContactDetailPageComponent,
     LoginFormComponent,
     NombreCompletoPipe,
+    RandomUserComponent,
+    RandomContactPageComponent,
   ],
   imports: [
     BrowserModule,

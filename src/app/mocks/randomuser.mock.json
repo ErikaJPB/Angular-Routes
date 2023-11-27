@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "gender": "female",
+            "name": {
+                "title": "Miss",
+                "first": "Eirin",
+                "last": "Alsos"
+            },
+            "location": {
+                "street": {
+                    "number": 8896,
+                    "name": "Erlends vei"
+                },
+                "city": "Midsund",
+                "state": "Rogaland",
+                "country": "Norway",
+                "postcode": "1430",
+                "coordinates": {
+                    "latitude": "39.7532",
+                    "longitude": "7.8903"
+                },
+                "timezone": {
+                    "offset": "+7:00",
+                    "description": "Bangkok, Hanoi, Jakarta"
+                }
+            },
+            "email": "eirin.alsos@example.com",
+            "login": {
+                "uuid": "301de28a-a845-4f08-9fde-0dee6c19e29f",
+                "username": "whitebird869",
+                "password": "starligh",
+                "salt": "Hqv9dFK8",
+                "md5": "1bd835258a3cd0dfc45845ebbbb138a8",
+                "sha1": "779cf820725f56524d06e7e4ed83bf7444dc0d29",
+                "sha256": "42720dd0ae27dca2e76c41accd08dace5773822f4b696da64248b8b98497cb92"
+            },
+            "dob": {
+                "date": "1995-09-16T02:17:50.585Z",
+                "age": 28
+            },
+            "registered": {
+                "date": "2020-09-24T23:16:42.971Z",
+                "age": 3
+            },
+            "phone": "71591592",
+            "cell": "94582507",
+            "id": {
+                "name": "FN",
+                "value": "16099538248"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/41.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/41.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/41.jpg"
+            },
+            "nat": "NO"
+        }
+    ],
+    "info": {
+        "seed": "5f6d64e1a85c8006",
+        "results": 1,
+        "page": 1,
+        "version": "1.4"
+    }
+}
