@@ -32,6 +32,6 @@ export class HomePageComponent implements OnInit {
         sexo: 'todos',
       },
     };
-    this.router.navigate(['contacts'], navigationExtras);
+    this.router.navigate(['dashboard/contacts'], navigationExtras);
   }
 }

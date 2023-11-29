@@ -27,7 +27,7 @@ export class LoginPageComponent implements OnInit {
       (response) => {
         if (response.token) {
           sessionStorage.setItem('token', 'response.token');
-          this.router.navigate(['home']);
+          this.router.navigate(['dashboard']);
         }
       },
       (error: any) => {

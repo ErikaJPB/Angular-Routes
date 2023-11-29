@@ -1,5 +1,10 @@
 <h1>Tus contactos :</h1>
 
+<div *ngIf="cargando">
+  <mat-spinner></mat-spinner>
+  <h6>Cargando...</h6>
+</div>
+
 <ng-container
   *ngIf="filtroSexo == 'female' || filtroSexo == 'male'; else listaCompleta"
 >
@@ -18,10 +23,10 @@
     [state]="{ data: contacto, filtro: filtroSexo }"
   >
     <h5 class="contacto">{{ contacto.name.first }} {{ contacto.name.last }}</h5>
-    <button (click)="volverAHome(contacto)">
+    <button mat-raised-button color="primary" (click)="volverAHome(contacto)">
       Seleccionar como Amigo Invisible
     </button>
   </div>
 </div>
 
-<a routerLink="/home">Volver</a>
+<a routerLink="/dashboard">Volver</a>

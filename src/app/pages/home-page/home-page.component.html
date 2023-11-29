@@ -18,9 +18,11 @@
 <div>
   <p>Filtros:</p>
 
-  <a [routerLink]="['/contacts']" [queryParams]="{ sexo: 'female' }"
+  <a [routerLink]="['/dashboard/contacts']" [queryParams]="{ sexo: 'female' }"
     >Amigas |</a
   >
 
-  <a [routerLink]="['/contacts']" [queryParams]="{ sexo: 'male' }"> | Amigos</a>
+  <a [routerLink]="['/dashboard/contacts']" [queryParams]="{ sexo: 'male' }">
+    | Amigos</a
+  >
 </div>
