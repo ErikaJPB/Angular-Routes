@@ -308,6 +308,12 @@
     <mat-nav-list>
       <a mat-list-item [routerLink]="['/']">Amigo Invisible</a>
       <a mat-list-item [routerLink]="['/dashboard/tasks']">Tareas</a>
+      <a
+        mat-list-item
+        [routerLink]="['/dashboard/fire-store']"
+        (mouseover)="preloadModule('fire-store')"
+        >Tienda</a
+      >
       <a mat-list-item (click)="logout()">Logout</a>
     </mat-nav-list>
   </mat-sidenav>
